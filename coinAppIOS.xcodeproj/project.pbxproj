@@ -13,6 +13,8 @@
 		D653762226B1F7A400E12547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D653762026B1F7A400E12547 /* Main.storyboard */; };
 		D653762426B1F7A400E12547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D653762326B1F7A400E12547 /* Assets.xcassets */; };
 		D653762726B1F7A400E12547 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D653762526B1F7A400E12547 /* LaunchScreen.storyboard */; };
+		D653763226B1F83D00E12547 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653763126B1F83D00E12547 /* CoinManager.swift */; };
+		D6E8E1B126B9CB2700D528D9 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E8E1B026B9CB2700D528D9 /* CoinData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D653762326B1F7A400E12547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D653762626B1F7A400E12547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D653762826B1F7A400E12547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D653763126B1F83D00E12547 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		D6E8E1B026B9CB2700D528D9 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				D653761A26B1F7A400E12547 /* AppDelegate.swift */,
 				D653761C26B1F7A400E12547 /* SceneDelegate.swift */,
-				D653761E26B1F7A400E12547 /* ViewController.swift */,
-				D653762026B1F7A400E12547 /* Main.storyboard */,
+				D653763026B1F7D500E12547 /* model */,
+				D653762F26B1F7CC00E12547 /* controller */,
+				D653762E26B1F7C300E12547 /* view */,
 				D653762326B1F7A400E12547 /* Assets.xcassets */,
 				D653762526B1F7A400E12547 /* LaunchScreen.storyboard */,
 				D653762826B1F7A400E12547 /* Info.plist */,
 			);
 			path = coinAppIOS;
+			sourceTree = "<group>";
+		};
+		D653762E26B1F7C300E12547 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D653762026B1F7A400E12547 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D653762F26B1F7CC00E12547 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D653761E26B1F7A400E12547 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		D653763026B1F7D500E12547 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D653763126B1F83D00E12547 /* CoinManager.swift */,
+				D6E8E1B026B9CB2700D528D9 /* CoinData.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E8E1B126B9CB2700D528D9 /* CoinData.swift in Sources */,
+				D653763226B1F83D00E12547 /* CoinManager.swift in Sources */,
 				D653761F26B1F7A400E12547 /* ViewController.swift in Sources */,
 				D653761B26B1F7A400E12547 /* AppDelegate.swift in Sources */,
 				D653761D26B1F7A400E12547 /* SceneDelegate.swift in Sources */,
@@ -287,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8LFKVJKW8;
 				INFOPLIST_FILE = coinAppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R8LFKVJKW8;
 				INFOPLIST_FILE = coinAppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
